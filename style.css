@@ -1,0 +1,297 @@
+/* ------------ PAGE HELLO -------------*/
+
+/* ----------- global -------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Made_tommy_soft_Regular';
+}
+@font-face {
+	font-family: 'Butler_Regular';
+	src: url('font/Butler.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Butler_Bold';
+	src: url('font/Butler-Bold.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Made_tommy_soft_Regular';
+	src: url('font/Made_tommy_soft_Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+/* ------------ header -------------*/
+#logo{
+    display:block;
+    width:70px;
+    height:auto;
+}
+
+#logo img {
+	padding-left: 130px;
+}
+
+#navbar {
+	position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+
+.nav{
+	display: flex;
+    flex-wrap: wrap;
+	padding-left: 500px;
+    padding-right: 120px;
+    list-style: none;
+}
+
+.nav-link{
+	display: block;
+    padding: .5rem 1rem;
+	text-decoration: none;
+	color: black;
+}
+
+
+#navbar{
+	background-color: #FFFFFF;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 2px 15px 2px rgb(150 147 147 / 10%);
+}
+
+.container-fluid {
+    width: 100%;
+}
+ul li a:hover,
+.active {
+    display: inline-block;
+	color:#403d56;
+    border-radius: 50px;
+    background-color: #B5BCD6;
+	color:white;
+}
+/* ------------ section 1 -------------*/
+#presentation{
+	padding-top: 200px;
+	display: flex;
+	height: 670px;
+    justify-content: center;
+}
+
+#text {
+	width: 30%;
+	margin-right: 130px;
+	padding-top: 30px;
+}
+#hello {
+	font-size: 15px;
+}
+#moi{
+	text-transform: uppercase;
+    font-size: 35px;
+	margin: 10px 0;
+	font-family: 'Butler_Regular';
+}
+#text p{
+	font-size: 20px;
+	margin: 20px 0;
+}
+#cv img {
+	width: 70%;
+}
+#cv {
+	display: flex; 
+    align-items: center;
+	flex-direction: column;
+	width: 30%;
+}
+#cv a {
+	width: 200px;
+}
+
+/* ------------ section 2 -------------*/
+
+#section2 {
+	background-color:#F7F7F7;
+	height: 650px;
+}
+.skills{
+	padding-bottom: 50px;
+}
+.skills img {
+	width:100px;
+}
+#competences{
+	display: flex;
+	flex-flow: wrap row;
+	width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#section2 h2 {
+	text-align: center;
+	padding-bottom: 75px;
+    padding-top: 85px;
+	font-size: 2.3rem;
+	font-family: 'Butler_Regular';
+}
+#section2 p {
+	color: #403d56;
+	font-size: 20px;
+	margin-top: 10px;
+	width: 250px;
+}
+.skills:hover{
+	font-weight: bold;
+}
+
+/* ------------ footer -------------*/
+
+#logo-footer {
+	width: 90px;
+}
+footer{
+	background-color: black;
+	height: 180px;
+}
+.icon {
+	width: 55px;	
+    margin-left: 40px;
+}
+footer a {
+	text-decoration: none;
+}
+#container-footer {
+	margin: auto 130px auto 130px;
+	padding-top: 60px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#copyright {
+	margin-left: 40px;
+    font-size: 15px;
+	color: white;
+	font-family: 'Butler_Regular';
+	letter-spacing: 0.7px;
+}
+
+
+/* ------------ PAGE PORTFOLIO -------------*/
+
+/* ------------ portfolio -------------*/
+#portfolio{
+	padding-top: 200px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.img img{
+	width: 670px;
+    height: 380px;
+	object-fit: cover;
+}
+
+#img3,
+#img4,
+#img6 {
+	object-position: 100% 0;
+}
+
+#img5 {
+	object-position: 30% 70%;
+}
+
+.box{
+	box-shadow: 0 0 10px 0 rgb(0 0 0 / 13%);
+	display: flex;
+	margin-bottom: 50px;
+	height:380px;
+}
+
+.infos {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	margin: 0 auto;
+}
+
+.infos h3 {
+	font-family: 'Butler_Bold';
+}
+#text-portfolio h3 {
+	font-size: 2.3rem;
+	font-family: 'Butler_Regular';
+}
+
+#text-portfolio p {
+	margin: 40px 0;
+    font-size: 20px;
+	color: #403d56;
+}
+
+
+/* ------------ PAGE CONTACT -------------*/
+
+/* ------------ formulaire -------------*/
+
+#form{
+	padding: 200px 0;
+	width: 20%;
+	margin: 0 auto;
+} 
+
+label,
+input,
+textarea {
+	display: block;
+}
+
+#form h1 {
+	font-size: 2.3rem;
+	margin-bottom: 40px;
+	font-family: 'Butler_Regular';
+}
+
+label,
+button {
+font-size: 1.5rem;
+margin-top: 25px;
+}
+
+input,
+textarea {
+	width: 360px;
+    height: 30px;
+	margin-top: 10px;
+	border: solid 1px black;
+}
+
+textarea {
+	height: 150px;
+}
+
+/* ------------ BOUTTONS -------------*/
+button {
+	padding: 10px 25px;
+    margin-top: 30px;
+    border-radius: 50px;
+	border-color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: white;
+}
+button:hover {
+	color: white;
+    background-color: black;
+}
