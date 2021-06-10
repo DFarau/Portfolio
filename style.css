@@ -45,7 +45,7 @@
     padding: 1.5rem 1rem;
 }
 
-.nav{
+#nav{
 	display: flex;
     flex-wrap: wrap;
 	padding-left: 500px;
@@ -74,7 +74,6 @@
 ul li a:hover,
 .active {
     display: inline-block;
-	color:#403d56;
     border-radius: 50px;
     background-color: #B5BCD6;
 	color:white;
