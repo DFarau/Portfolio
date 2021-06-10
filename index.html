@@ -4,111 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo.svg" />
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Doriane Farau</title>
+    <title>JADE</title>
+    <!-- A redéfinir -->
+    <link rel="icon" href="img/logo_vert.svg">
+    <link rel="stylesheet" href="css/bar_nav.css">
+    <link rel="stylesheet" href="css/homepage1.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
-<body>
-    <header>
-        <div class="container-fluid" id="navbar">
-            <a class="navbar-brand" href="index.html" id="logo">
-                <img src="img/logo.svg" alt="logo Doriane Farau">
-            </a>
-
-            <nav class="navigation">
-                <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">HELLO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
-                </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="section1">
-        <div id="presentation">
-            <div id="text">
-                <h2 id="hello">Hello!</h2>
-                <h2 id="moi">
-                    Je suis Doriane Farau.
-                </h2>
-                <p>
-                    Actuellement à la recherche d'un stage développeur Front-end de 3 mois dans le but d'améliorer mes compétences acquises à Hetic.
-                </p>
-                <p>
-                    Bon à savoir, mon cursus m'a également permis d'acquérir des compétences en Back-end ainsi qu'en UX et UI, un vrai couteau suisse!
-                </p>
-            </div>
-            <div id="cv">
-                <img src="img/CV.svg" alt="illustartion cv">
-                <a href="https://drive.google.com/file/d/1uplwzVcsZs-ZIHPVzr-7_0QpLp8NCSXO/view?usp=sharing">
-                    <button>Consulter mon CV</button>
+    <body>
+        <nav>
+            <div id="logo">
+                <a href="homepage.html">
+                    <img src="img/logo_blanc.svg" alt="logo">
                 </a>
+            </div> 
+            <div id="wrapper">
+    
+              <ul id="list_cat">
+                  <li id="dropdown_menu">
+                    <div id="category_container">
+                        <div id="category">Catégorie</div>
+                        <div id="catbtn1">
+                            <img src="img/down-arrow.svg" alt="Catégorie">
+                        </div>
+                    </div>
+                    <ul id="list">
+                        <li><a href="page_produit.html">Peau normale</a></li>
+                        <li><a href="#">Peau sèche</a></li>
+                        <li><a href="#">Peau mixe</a></li>
+                        <li><a href="#">Peau grasse</a></li>
+                        <li><a href="#">Peau mature</a></li>
+                    </ul>  
+                  </li> 
+              </ul>
             </div>
-        </div>
-    </section>
+            <div id="search_container">
+                <input type="text" placeholder="Rechercher" id="search">
+                <div id="searchbtn">
+                    <img src="img/search.svg" alt="bouton rechercher">
+                </div>
+            </div>    
+            <ul class="nav_links">
+                <li id="show_cat" >  
+                    <ul id="list_cat2">
+                        <li id="dropdown_menu2">
+                            <div id="category_container2">
+                                <div class="text">Catégorie</div>
+                                <div id="catbtn2">
+                                    <img src="img/down-arrow.svg" alt="Catégorie">
+                                </div>
+                            </div>
+                            <ul id="list_hidden">
+                                <li><a href="page_produit.html">Peau normale</a></li>
+                                <li><a href="#">Peau sèche</a></li>
+                                <li><a href="#">Peau mixe</a></li>
+                                <li><a href="#">Peau grasse</a></li>
+                                <li><a href="#">Peau mature</a></li>
+                            </ul>
+                        </li>  
+                    </ul>
+                </li>
+                <li> 
+                    <a href="#" class="text">Wishlist</a>
+                    <img src="img/like.svg" alt="Wishlist" class="icon">
+                </li>
+                <li> 
+                    <a href="#" class="text">Compte</a>
+                    <img src="img/user.svg" alt="Compte" class="icon">
+                </li>
+                <li> 
+                    <a id="number" href="./panier.html" class="text">Panier</a>
+                    <div onclick="bagsort()">
+                        <a href="./panier.html">
+                            <img src="img/shopping-bag.svg" alt="Panier" class="icon">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="burger_menu">
+                <div id="ligne1"></div>
+                <div id="ligne2"></div>
+                <div id="ligne3"></div>
+            </div>
+        </nav> 
+	<!-- Hero -->
+        
+    
+    <a id="hero" href="#main">
+        <img src="img/hero.png"> 
+    </a>
 
-    <section id="section2">
-        <h2>Compétences</h2>
-        <div id="competences">
-            <div class="skills">
-                <img src="img/competences/www.svg" alt="">
-                <p>HTML - CSS - Javascript</p>
-            </div>
-            <div class="skills">
-                <img src="img/competences/Python.svg" alt="">
-                <p>Python</p>
-            </div>
-            <div class="skills">
-                <img src="img/competences/SQL.svg" alt="">
-                <p>SQL</p>
-            </div>
-            <div class="skills">
-                <img src="img/competences/PHP.svg" alt="">
-                <p>PHP</p>
-            </div>
-            <div class="skills">
-                <img src="img/competences/Design.svg" alt="">
-                <p>Figma - Adobe XD</p>
-            </div>
-            <div class="skills">
-                <img src="img/competences/Photoshop.svg" alt="">
-                <p>Photoshop</p>
-            </div>
-            <div class="skills">
-                <img src="img/competences/Illustrator.svg" alt="">
-                <p>Illustrator</p>
-            </div>
-            <div class="skills">
-                <img src="img/competences/Indesign.svg" alt="">
-                <p>InDesign</p>
-            </div>
-        </div>
-    </section>
+<!-- Main -->
+    <main id="main">
+        <section id="section1">
+            <a href="#">
+                <h2>Notre éthique</h2>
+                <img src="img/ethique.png">
+            </a>
+        </section>
+        <section id="section2">
+                <a href="page_produit.html">
+                    <h2>Nos produits</h2>
+                    <img src="img/produit.png">
+                </a>
+        </section>
+        <section id="section3">
+            <a href="#">
+                <h2>Nouveautés</h2>
+                <img src="img/new.png">
+            </a>
+        </section>
+    </main>
     <footer>
-        <div id="container-footer">
-            <a href="index.html">
-                <img id="logo-footer" src="img/logo-blanc.svg" alt="logo Doriane Farau">
-            </a>
-            <p id="copyright">© 2021 DORIANE FARAU. TOUS DROITS RÉSERVÉS</p>
-            <div id="icon">
-                <a href="https://github.com/DFarau">
-                    <img class="icon" src="img/github1.svg" alt="logo Doriane Farau">
-                </a>
-                <a href="https://www.linkedin.com/in/doriane-farau-a00a46171/">
-                    <img class="icon" src="img/linkedin1.svg" alt="logo Doriane Farau">
-                </a>
-            </div>
-        </div>  
+        <!-- Adresse -->
+        <section> 
+            <img src="img/logo_blanc.svg"> 
+        </section>
+        <!-- Réseaux sociaux -->
+        <section>
+            <a href="https://fr-fr.facebook.com/" title="Lien vers la page Facebook de Jade"><img src="img/facebook.svg" alt="Facebook Jade"></a>
+            <a href="https://www.instagram.com/?hl=fr" title="Lien vers le profil Instagram de Jadeç"><img src="img/instagram.svg" alt="Instagram Jade"></a>
+            <a href="https://twitter.com/" title="Lien vers la page Linkedin de Jade"><img src="img/twitter.svg" alt="Linkedin Jade"></a>
+        </section>
+        <!-- Mentions -->
+        <section id="mentions">
+            <span>Copyright 2021 Jade-Beauty </span>
+            <a href="https://">Mentions légales</a>
+        </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script src="script.js"></script>
-</body>
+    <script src="js/bar_nav.js"></script>
+    </body>
 </html>
