@@ -85,8 +85,8 @@ ul li a:hover,
 /* ------------ section 1 -------------*/
 #presentation{
 	padding-top: 200px;
+	margin-bottom: 60px;
 	display: flex;
-	height: 670px;
 	justify-content: center;
 }
 
